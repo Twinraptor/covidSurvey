@@ -1,14 +1,16 @@
 import React from "react";
-import Main from "./views/Main";
+import UserSignIn from "./views/UserSignIn";
 import { Router } from "@reach/router";
 import Detail from "./views/Detail";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className='App'>
+      <Header />
       <Router>
         <Detail path='user/:id' />
-        <Main path='/' />
+        <UserSignIn path='/' />
       </Router>
     </div>
   );
